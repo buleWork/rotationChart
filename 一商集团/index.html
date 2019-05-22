@@ -1,0 +1,183 @@
+</html>
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+  <title>一商集团</title>
+  <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+    <script src="assets/html5shiv/html5shiv.min.js"></script>
+    <script src="assets/respond/respond.min.js"></script>
+    <![endif]-->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/styles.css" media="screen">
+
+  <!--必要样式表-->
+  <link rel="stylesheet" href="./css/jquery.tiles.min.css">
+</head>
+<style>
+  .navbars{
+  margin: 30px auto ;
+  height: 60px;
+}
+ .lists{
+  margin: 30px auto 50px;
+}
+</style>
+
+<body>
+
+  <!--导航栏-->
+  <nav class="navbars">
+    <div class="container">
+      <div class="navbars-header ">
+        <img src="./img/logo.png" alt="">
+      </div>
+      <ul class="nav">
+        <li>
+          <a href="javascript:;">首页</a>
+        </li>
+        <li>
+          <a href="javascript:;" class="">关于一商</a>
+        </li>
+        <li>
+          <a href="javascript:;" class="">集团新闻</a>
+        </li>
+        <li>
+          <a href="javascript:;" class="">业务范围</a>
+        </li>
+        <li>
+          <a href="javascript:;" class="">企业文化</a>
+        </li>
+        <li>
+          <a href="javascript:;" class="">联系我们</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <section class="tai_product">
+    <div class="container">
+      <div class="slider-wrap" style="opacity: 1;">
+        <div class="slider tiles-slider-wrap tiles-slider-default tiles-slider-s300">
+          <img src="./img/banner1.jpg" style="display: none;">
+          <img src="./img/banner2.jpg" style="display: none;">
+          <img src="./img/banner3.jpg" style="display: none;">  
+        </div>
+
+      </div>
+
+
+  </section>
+
+
+
+
+  <footer class="lists container">
+    <img src="./img/footer.png" alt="">
+  </footer>
+  <script src="js/jquery.min.js"></script>
+  <script src="./js/jquery-1.8.3.min.js"></script>
+  <script src="./js/jquery.tiles.js"></script>
+  <script type="text/javascript">
+    var $slider = $('.slider-wrap');
+    var html = $slider.html();
+
+    // Options
+
+    var defaults = {
+      thumbSize: 20,
+    };
+
+    var effects = {
+      'default': {
+        x: 6,
+        y: 4,
+        random: true
+      },
+      simple: {
+        x: 6,
+        y: 4,
+        effect: 'simple',
+        random: true
+      },
+      left: {
+        x: 1,
+        y: 8,
+        effect: 'left'
+      },
+      up: {
+        x: 20,
+        y: 1,
+        effect: 'up',
+        rewind: 60,
+        backReverse: true
+      },
+      leftright: {
+        x: 1,
+        y: 8,
+        effect: 'leftright'
+      },
+      updown: {
+        x: 20,
+        y: 1,
+        effect: 'updown',
+        cssSpeed: 500,
+        backReverse: true
+      },
+      switchlr: {
+        x: 20,
+        y: 1,
+        effect: 'switchlr',
+        backReverse: true
+      },
+      switchud: {
+        x: 1,
+        y: 8,
+        effect: 'switchud'
+      },
+      fliplr: {
+        x: 20,
+        y: 1,
+        effect: 'fliplr',
+        backReverse: true
+      },
+      flipud: {
+        x: 20,
+        y: 3,
+        effect: 'flipud',
+        reverse: true,
+        rewind: 75
+      },
+      reduce: {
+        x: 6,
+        y: 4,
+        effect: 'reduce'
+      },
+      360: {
+        x: 1,
+        y: 1,
+        effect: '360',
+        fade: true,
+        cssSpeed: 600
+      }
+    };
+    
+    $('.slider').tilesSlider($.extend({}, defaults, effects['default']));
+    $('.slider').tilesSlider('start');
+    $('.slider').mousemove(function(){
+      $('.slider').tilesSlider('stop');
+    })
+    $('.slider').mouseout(function(){
+        $('.slider').tilesSlider('start');
+    })
+  
+  </script>
+</body>
+
+</html>

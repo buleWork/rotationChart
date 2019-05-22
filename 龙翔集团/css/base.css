@@ -1,0 +1,267 @@
+h1, h2, h3, h4, h5, h6, img, ul, li, a, span, p, i, strong, b, em, form, input, label, div, body, html {
+  margin: 0;
+  padding: 0;
+}
+img {
+  vertical-align: middle;
+  border: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+img {
+  width: 100%;
+  /*display: block;*/
+  vertical-align: middle;
+}
+
+input[type="button"] {
+  -webkit-appearance: none;
+}
+
+body {
+  font-family: "Microsoft Yahei", Tahoma;
+  color: #000;
+  margin: 0 auto;
+}
+
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+
+.container{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.navbars{
+  margin: 10px auto 5px; 
+}
+.tai_product ,lists{
+margin: 80px auto;
+}
+.banner-b {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+  /* border: 1px solid #ddd; */}
+.banner-b .hd {
+  width: 100%;
+  /* height: 15px; */
+  overflow: hidden;
+  position: absolute;
+  left: 40%;
+  bottom: 6%;
+  z-index: 1;
+  text-align: center;
+}
+.banner-b .hd ul li {
+  float: left;
+  margin-right: 10px;
+  padding: 3px 25px;
+  line-height: 14px;
+  text-align: center;
+  background: #c0c0c0;
+  /* opacity: .2; */
+  cursor: pointer;
+}
+
+.banner-b:hover  .prev{
+position: absolute;
+width: 60px;
+height: 60px;
+background: url(../img/pev.png) no-repeat;
+left: 2%;
+bottom: 50%;
+z-index: 5;
+}
+.banner-b:hover  .next{
+position: absolute;
+width: 60px;
+height: 60px;
+background: url(../img/next.png) no-repeat;
+right: 2%;
+bottom: 50%;
+z-index: 5;
+}
+.banner-b .hd ul li.on {
+  opacity: 1;
+  background: #fff;
+  color: #fff;
+}
+
+
+.product{
+width: 100%;
+height: 800px;
+background: url('../img/background.png') center;
+}
+.slideTxtBox {
+  width: 100%;
+  text-align: left;
+  position: relative;
+}
+
+.slideTxtBox .hd {
+width: 100%;
+  height: 80px;    
+}
+.slideTxtBox .hd ul{
+float: left;
+}
+.slideTxtBox .bd ul{
+height: 600px;
+}
+.slideTxtBox .hd ul li{
+float: left;
+/* width: 220px; */
+width: 182px;
+height: 60px;
+line-height: 60px;
+text-align: center;
+margin-top:60px;
+margin-right: 15px;
+background: #fff;
+border-bottom:1px solid #ccc;
+}
+.slideTxtBox .hd ul li.on {
+border-bottom:0;
+/* border:2px solid red; */
+background-color: #af090b;
+ color: #fff;
+}
+.slideTxtBox .hd ul li:nth-child(6){
+margin-right: 0px;
+}
+.slideTxtBox .bd{
+margin-top: 80px;
+}
+.slideTxtBox .hd .next{
+position: absolute;
+  top: 50%;
+  left: -6%;
+  width: 60px;
+height: 60px;
+background: url(../img/pev.png) no-repeat;
+}
+.slideTxtBox .hd .prev{
+position: absolute;
+top: 50%;
+right: -6%;
+width: 60px;
+height: 60px;
+background: url(../img/next.png) no-repeat;
+}
+
+.slideTxtBox .hd ul li{
+
+}
+.c1,.c2,.c3,.c4,.c5,.c6{
+  position: relative;
+  overflow: hidden;
+}
+
+.c1::before{
+  position: absolute;
+  content: url(../img/b1.png);
+  top: 20px;
+  left: 30px;
+}
+.c1::after{
+position: absolute;
+content: url(../img/r1.png);
+top: 20px;
+left: -999px;
+}
+.c2::before{
+position: absolute;
+content: url(../img/b2.png);
+top: 20px;
+left: 30px;
+}
+.c2::after{
+position: absolute;
+content: url(../img/r2.png);
+top: 20px;
+left: -999px;
+}
+.c3::before{
+  position: absolute;
+  content: url(../img/b3.png);
+  top: 20px;
+  left: 30px;
+}
+.c3::after{
+  position: absolute;
+  content: url(../img/r3.png);
+  top: 20px;
+  left: -999px;
+}
+.c4::before{
+  position: absolute;
+  content: url(../img/b4.png);
+  top: 20px;
+  left: 30px;
+}
+.c4::after{
+  position: absolute;
+  content: url(../img/r4.png);
+  top: 20px;
+  left: -999px;
+}
+.c5::before{
+  position: absolute;
+  content: url(../img/b5.png);
+  top: 20px;
+  left: 30px;
+}
+.c5::after{
+  position: absolute;
+  content: url(../img/r5.png);
+  top: 20px;
+  left: -999px;
+}
+.c6::before{
+  position: absolute;
+  content: url(../img/b6.png);
+  top: 24px;
+  left: 30px;
+}
+.c6::after{
+  position: absolute;
+  content: url(../img/r6.png);
+  top: 24px;
+  left: -999px;
+}
+.on::before{
+  left: -999px;
+  }
+.on::after{
+  left: 30px;
+  }
